@@ -6,4 +6,4 @@
 
 ##### 演示图片 <br>
 
-<img src="https://github.com/paihuai00/JsonToArkTsModel/blob/master/screenshot/easy_use.gif" width="80%">
+<img src="https://github.com/paihuai00/JsonToArkTsModel/blob/master/screenshot/easy_use.gif" width="100%">
