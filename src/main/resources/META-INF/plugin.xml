@@ -6,7 +6,7 @@
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
     <name>JsonToArkTsModel</name>
 
-    <version>1.1.0</version>
+    <version>1.2.0</version>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
     <vendor email="307292568@qq.com" url="https://www.baidu.com">baidu</vendor>
