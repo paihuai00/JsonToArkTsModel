@@ -27,13 +27,20 @@ class ArkTsMaker(val json: String) {
 
     fun makeArkTsModel(): String {
         stringBuffer.setLength(0)
-        if (!json.isJSON()) {
-            LogUtils.log(TAG, "this is not json")
-            return "this is not json"
+        runCatching {
+            if (!json.isJSON()) {
+                LogUtils.log(TAG, "this is not json")
+                return "this is not json"
+            }
+        }.onSuccess {
+            dealJson(json)
+            return stringBuffer.toString()
+        }.onFailure {
+            return "JSON conversion error. \n\n 『${it.message}』"
         }
-        dealJson(json)
 
-        return stringBuffer.toString()
+        //Json 转换异常
+        return "JSON conversion error. Please check if the input is in JSON format."
     }
 
     private fun dealJson(json: String) {

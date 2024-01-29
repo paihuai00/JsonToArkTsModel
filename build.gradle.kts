@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.rakts"
-version = "1.2"
+version = "1.3"
 
 repositories {
     mavenCentral()
@@ -23,11 +23,11 @@ intellij {
 tasks {
     // Set the JVM compatibility versions
     withType<JavaCompile> {
-        sourceCompatibility = "17"
-        targetCompatibility = "17"
+        sourceCompatibility = "11"
+        targetCompatibility = "11"
     }
     withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
-        kotlinOptions.jvmTarget = "17"
+        kotlinOptions.jvmTarget = "11"
     }
 
     patchPluginXml {
