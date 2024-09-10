@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.rakts"
-version = "1.3"
+version = "1.4"
 
 repositories {
     mavenCentral()
@@ -15,9 +15,11 @@ repositories {
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
     version.set("2022.2.5")
-    type.set("IC") // Target IDE Platform
+    type.set("IU") // Target IDE Platform
 
-    plugins.set(listOf(/* Plugin Dependencies */))
+    plugins.set(listOf(
+        "java",
+        "org.jetbrains.kotlin"))
 }
 
 tasks {
@@ -32,7 +34,7 @@ tasks {
 
     patchPluginXml {
         sinceBuild.set("222")
-        untilBuild.set("232.*")
+        untilBuild.set("233.*")
     }
 
     signPlugin {
