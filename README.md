@@ -3,6 +3,10 @@
 1、生成的model都添加了 export 可按需进行删除；<br>
 2、按照ts规范，model 使用 interface；<br>
 3、JsonArray，会使用最全的元素来进行解析；<br>
+4、如有问题，请联系 307292568@qq.com；<br>
+
+##### 直接将jar包copy 后安装
+地址：JsonToArkTsModel/downloadjars/JsonToArkTsModel-xxx.jar <br>
 
 
 ##### 已上架可以直接搜索安装 <br>
